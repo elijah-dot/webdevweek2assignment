@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhanced HTML5 Content & Mastering Forms Assignment">
+    <title>Enhanced HTML5 Content & Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        img, video {
+            margin-top: 10px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>HTML5 Advanced Content & Forms</h1>
+        <p>Demonstrating lists, tables, media, and form handling using HTML5 features</p>
+    </header>
+
+    <!-- Section 1: Lists -->
+    <section>
+        <h2>📜 Programming Languages I Want to Learn</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C#</li>
+        </ul>
+
+        <h3>Steps to Become a Frontend Developer:</h3>
+        <ol>
+            <li>Learn HTML5, CSS3, and JavaScript</li>
+            <li>Practice with projects</li>
+            <li>Master frameworks like React</li>
+            <li>Build a strong portfolio</li>
+        </ol>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+        <h2>📊 Weekly Study Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML & CSS</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>JavaScript Basics</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Projects</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+        <h2>🎥 Learning Resources</h2>
+        <p>Here's an image and a video for learning inspiration:</p>
+        <img src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nfGVufDB8fDB8fHww" alt="Placeholder Image of Learning">
+        <video controls width="400">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+        <h2>📝 Sign Up for the Web Development Course</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+               
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" pattern="[0-9]{10}" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Preferences</legend>
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Choose a course--</option>
+                    <option value="frontend">Frontend Development</option>
+                    <option value="backend">Backend Development</option>
+                    <option value="fullstack">Full-Stack Development</option>
+                </select>
+
+                <label>Preferred Learning Mode:</label>
+                <input type="radio" name="mode" value="online" required> Online
+                <input type="radio" name="mode" value="offline"> Offline
+
+                <label for="experience">Prior Experience (in years):</label>
+                <input type="number" id="experience" name="experience" min="0" max="10">
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="comments">Why do you want to join?</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Write your reason..." required></textarea>
+
+                <label>
+                    <input type="checkbox" name="terms" required> I agree to the terms and conditions
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
